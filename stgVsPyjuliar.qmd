@@ -1,0 +1,624 @@
+---
+title: "Welcome to GHG Training curriculum Development and Delivery <br/> STG vs. PCF"
+logo: pyjuliar_logo.png
+include-in-header:
+  - text: |
+      <style>
+      .reveal .slide-logo {
+        max-height: unset;
+        height: 70px;
+      }
+      </style>
+format:
+    revealjs: 
+        background-transition: slide
+        theme: beige
+---
+
+## Introduction
+
+- [PyJuliaR launched 2023]{style="color:green"} with Technical Experts in the area of Climate Change Mitigation and Adaptation; 
+- Founder | Director of Climate Company
+- Certified member to [Team of Technical Experts - TTE]{style="color:green"} by UNFCCC
+- Certified GHG Inventory [Assessor (GHG Management Institute)]{style="color:yellowgreen"}
+- [National GHG Inventory Coordinator vs Compiler]{style="color:darkgreen"}
+- Participated in [<b>Accreditation and Verification Regional Training, Thailand</b>]{style="color:yellowgreen;"} in Aviation Sector
+
+## GHG Inventory Framework
+
+- [National]{style="color:yellowgreen"} [(IPCC 2006 GHG Inventory Guidelines)]{style="color:#FF7F7F"}
+- [Regional]{style="color:yellowgreen"} [(IPCC 2006 GHG Inventory Guidelines)]{style="color:#FF7F7F"}
+- [City]{style="color:yellowgreen"} [(2006 GL]{style="color:#FF7F7F"} / [Corporate Accounting Standard)]{style="color:maroon"}
+- [Plant]{style="color:yellowgreen"} [(2006 GL]{style="color:#FF7F7F"} / [Corporate Accounting Standard)]{style="color:maroon"}
+
+## Comparison of two GHG Inventory Framework: [Level of Details]{style="fontsize:2pt; color:maroon"}
+::::{.columns}
+:::{.column width="45%"}
+:::{.callout-tip collapse="true" icon="false"}
+### IPCC 2006 Guideline
+- [Tier 1]{style="color:maroon"}: 
+    Default Emission Factor
+- [Tier 2]{style="color:maroon"}:
+    Country Specific Emission Factor
+- [Tier 3]{style="color:maroon"}:
+    Plant Specific Emission Factor
+
+:::
+:::
+:::{.column width="45%"}
+:::{.callout-tip collapse="true" icon="false"}
+### Corporate Accounting Standard
+- [Scope 1]{style="color:maroon"}:
+    Direct Emissions 
+- [Scope 2]{style="color:maroon"}:
+    Indirect Emissions from Purchased Electricity, Steam, Cooling
+- [Scope 3]{style="color:maroon"}:
+    Indirect Emissions from Up-stream and Down Stream
+
+:::
+:::
+::::
+[CDP has listed more than 50 frameworks.]{style="color:maroon"}
+
+## [IPCC Tier1 vs. GHGP Scope 1 vs. ISO-14064-1]{style="fontsize:16px; color:maroon"}{.scrollable}
+::::{.columns}
+:::{.column width="35%"}
+:::{.callout-tip collapse=true icon="false"}
+### IPCC 2006 Guideline
+- [General Guidance]{style="color:steelblue"}
+    - Cross-Cutting Issues
+- [Energy]{style="color:steelblue"}: 
+    - 3 Categories and 10 Sub-categories
+- [IPPU]{style="color:steelblue"}:
+    - 8 Categoreis and 42 Sub-Caterories
+- [AFOLU]{style="color:steelblue"}:
+    - 3 Categories and 50 Sub-Categories
+- [Waste]{style="color:steelblue"}:
+    - 4 Categories and 10 Sub-Categories
+
+:::
+:::
+:::{.column width="63%"}
+:::{.callout-tip collapse=true icon="false"}
+### Corporate Accounting Standard 
+- [Stationary Combustion]{style="color:maroon"}:
+    Fuel Combustion of stationary equipment such as boilers, furnances, burners, turbines, heaters, incinerators, engines, flares; 
+- [Mobile Combustion]{style="color:maroon"}:
+    Transportation Devices such as automobiles; trucks and buses; trains; airplanes; boats; ships; barges; vessels; etc
+- [Process Emissions]{style="color:maroon"}:
+    Emissions from physical or chemical processes such as CO2 from the calcination step in cement manufacturing, CO2 from catalytic cracking in petrochemical processing, PFC emissions from aluminum smelting, etc.
+- [Fugitive Emissions]{style="color:maroon"}:
+    intentional and unintentional releases such as equipment leaks from joints, seals, packing, gaskets, as well as fugitive emissions from coal piles, wastewater treatment, pits, cooling towers, gas processing facilities, etc.
+
+:::
+:::
+::::
+[Tier 1 vs. Scope 1 ]{style="color:maroon"}
+
+## Key GHG Gases
+:::: {.columns}
+::: {.column width="45%"}
+::: {.callout-warning collapse=true icon="false"}
+## Kyoto Protocol Gases
+Carbon Dioxide <sub> </sub>  
+Methane  
+Nitrous Oxide  
+HydrofluoroCarbon  
+PerfluoroCarbon  
+Nitrogen TriFluoride  
+Sulphur Hexafluoride  
+:::
+:::
+::: {.column width="45%"}
+::: {.callout-warning collapse=true icon="false"}
+## Kyoto Protocol Gases in Abbreviation
+[CO<sub>2</sub>]{style="color:maroon"}   
+[CH<sub>4</sub>]{style="color:maroon"}   
+[N<sub>2</sub>O]{style="color:maroon"}  
+[HFC]{style="color:maroon"}   
+PFC  
+NF<sub>3</sub>  
+[SF<sub>6</sub>]{style="color:maroon"}   
+:::
+:::
+::::
+[Which GHG gases do you want to cover?]{style="color:maroon"}
+
+## IPCC Charts {.scrollable}
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:['wordtree']});
+      google.charts.setOnLoadCallback(drawSimpleNodeChart);
+      function drawSimpleNodeChart() {
+        var nodeListData = new google.visualization.arrayToDataTable([  
+          ['id', 'childLabel', 'parent', 'size', { role: 'style' }],
+          [0, 'IPCC', -1, 1, 'black'],
+          [1, 'Energy', 0, 1, 'yellowgreen'],
+          [2, 'IPPU', 0, 1, 'yellowgreen'],
+          [3, 'AFOLU', 0, 1, 'black'],
+          [4, 'Waste', 0, 1, 'brown'],
+
+          [5, 'Fuel Combustion', 1, 1, 'black'],
+          [6, 'Fugitive Emissions', 1, 1, 'black'],
+          [7, 'C Transport and Storate', 1, 1, 'black'],
+          
+          [8, 'Mineral', 2, 1, 'yellowgreen'],
+          [9, 'Chemical', 2, 1, 'black'],
+          [10, 'Metals', 2, 1, 'black'],
+          [11, 'Non-energy Products', 2, 1, 'black'],
+          [12, 'Electronic', 2, 1, 'black'],
+          [13, 'Ozone Depleting Substances', 2, 1, 'yellowgreen'],
+          [14, 'Other Products Manufacture and Use', 2, 1, 'black'],
+          [15, 'Other', 2, 1, 'black'],
+
+          [16, 'Livestock', 3, 1, 'black'],
+          [17, 'Land', 3, 1, 'black'],
+          [18, 'Agriculure and non-CO2', 3, 1, 'black'],
+          [19, 'Other', 3, 1, 'black'],
+
+          [20, 'Solid Waste Disposal', 4, 1, 'black'],
+          [21, 'Biological Treatment of Solid Waste', 4, 1, 'black'],
+          [22, 'Incineration and Open Burning of Waste', 4, 1, 'black'],
+          [23, 'Waste Water Treatment and Discharge', 4, 1, 'black'],
+
+          [24, 'Energy Industries', 5, 1, 'black'],
+          [25, 'Manufacturing Industries and Constructions', 5, 1, 'yellowgreen'],
+          [26, 'Transport', 5, 1, 'yellowgreen'],
+          [27, 'Other Sectors', 5, 1, 'black'],
+          [28, 'Non-Specified', 5, 1, 'black'],
+
+          [29, 'Solid Fuels', 6, 1, 'yellowgreen'],
+          [30, 'Oil and Natural Gas', 6, 1, 'black'],
+          [31, 'Transport of CO2', 7, 1, 'black'],
+          [32, 'Injection and Storage', 7, 1, 'black'],
+          [33, 'Other', 7, 1, 'black'],
+          
+          [34, 'Cement', 8, 2, "yellowgreen"],
+          [35, 'Lime', 8, 1, "black"],
+          [36, 'Glass', 8, 1, "black"],
+          [37, 'Other Process use of CO3', 8, 1, "black"],
+
+          [38, 'Ammonia', 9, 1, 'black'],
+          [39, 'Nitric Acid', 9, 1, 'black'],
+          [40, 'Adipic Acid', 9, 1, 'black'],
+          [41, 'Caprolactam, Glyoxl and Glyoxylic', 9, 1, 'black'],
+          [42, 'Carbide', 9, 1, 'black'],
+          [43, 'Titanium Oxide', 9, 1, 'black'],
+          [44, 'Soda Ash', 9, 1.5, 'blue'],
+          [45, 'Petrochemical and Carbon Black', 9, 0.8, 'black'],
+          [46, 'Fluorochemical Production', 9, 0.8, 'black'],
+          
+          [47, 'Iron and Steel', 10, 1, 'black'],
+          [48, 'Ferroalloys', 10, 1, 'black'],
+          [49, 'Aluminium', 10, 1, 'black'],
+          [50, 'Magnesium',10, 1, 'black'],
+          [51, 'Lead', 10, 1, 'black'],
+          [52, 'Zinc', 10, 1, 'black'],
+          [53, 'Other', 10, 1, 'black'],
+          
+          [54, 'Lubricant', 11, 1, 'yellowgreen'],
+          [55, 'Parafin Wax', 11, 1, 'yellowgreen'],
+          [56, 'Solvents', 11, 1, 'yellowgreen'],
+          [57, 'Other', 11, 1, 'black'],
+          
+          [58, 'Integrated Circuits & Semi-Conductor', 12, 1, 'maroon'],
+          [59, 'TFT Flat Panel Display', 12, 1, 'maroon'],
+          [60, 'Photovoltaic', 12, 1, 'maroon'],
+          [61, 'Heat Transfer Fluid', 12, 1, 'maroon'],
+          [62, 'Other', 12, 1, 'maroon'],
+          
+          [63, 'Refrigeration and Air Conditioning', 13, 1, 'yellowgreen'],
+          [64, 'Foam Blowing Agent', 13, 1, 'yellowgreen'],
+          [65, 'Fire Protection', 13, 1, 'yellowgreen'],
+          [66, 'Aerosols', 13, 1, 'black'],
+          [67, 'Solvents', 13, 1, 'yellowgreen'],
+          [68, 'Other Application', 13, 1, 'black'],
+
+          [69, 'Electrical Equipment', 14, 1, 'maroon'],
+          [70, 'SF6 and PFC from Other Products', 14, 1, 'maroon'],
+          [71, 'N2O from Product Uses', 14, 1, 'maroon'],
+          [72, 'Other', 14, 1, 'maroon'],
+
+          [73, 'Pulp and Paper', 15, 1, 'black'],
+          [74, 'Food and Beverage', 15, 1, 'black'],
+          [75, 'Other', 15, 1, 'black'],
+          
+          [76, 'Enteric Fermentation', 16, 1, 'black'],
+          [77, 'Manure Management', 16, 1, 'black'],
+          
+          [78, 'Forestland', 17, 1, 'black'],
+          [79, 'Cropland', 17, 1, 'black'],
+          [80, 'Grassland', 17, 1, 'black'],
+          [81, 'Wetland', 17, 1, 'black'],
+          [82, 'Settlement', 17, 1, 'black'],
+          [83, 'Otherland', 17, 1, 'black'],
+          
+          [84, 'Biomass burning', 18, 1, 'black'],
+          [85, 'Liming', 18, 1, 'black'],
+          [86, 'Urea Application', 18, 1, 'black'],
+          [87, 'Direct N2O from managed Soil', 18, 1, 'black'],
+          [88, 'Indirect N2O from managed Soil', 18, 1, 'black'],
+          [89, 'Indirect N2O from manure management', 18, 1, 'black'],
+          [90, 'Rice Cultivation', 18, 1, 'black'],
+          [91, 'Other', 18, 1, 'black'],
+          
+          [92, 'Managed Waste Disposal Sites', 20, 1, 'black'],
+          [93, 'Unmanaged Waste Disposal Sites', 20, 1, 'black'],
+          [94, 'Uncategorized Waste Disposal Sites', 20, 1, 'black'],
+          
+          [95, 'Waste Incineration', 22, 1, 'brown'],
+          [96, 'Open Burning of Waste', 22, 1, 'brown'],
+          [97, 'Domestic Wastewater Treatment and Discharge', 23, 1, 'brown'],
+          [98, 'Industrial Wastewater Treatment and Discharge', 23, 1, 'brown']]);
+
+        var options = {
+          colors: ['black', 'black', 'black'],
+          wordtree: {
+            format: 'explicit',
+            type: 'suffix'
+          }
+        };
+
+        var wordtree = new google.visualization.WordTree(document.getElementById('wordtree_explicit'));
+        wordtree.draw(nodeListData, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wordtree_explicit" style="width: 1200px; height: 600px;"></div>
+  </body>
+</html>
+
+## IPCC 2006 GLs Vs. ISO-14064 Vs. GHG Protocol
+![](/Desktop/GHGP_img/ipcc_sectors.png){.absolute top=100 left=0 width="500" height="300"}
+
+![](/Desktop/GHGP_img/ipcc_gls.png){.absolute top=70 right=275 width="250" height="350"}
+
+![](/Desktop/GHGP_img/iso_14064_1.png){.absolute top=70 right=0 width="250" height="350"}
+
+![](/Desktop/GHGP_img/GHGP-Scope-1.png){.absolute top=450 left=0 width="250" height="350"}
+
+![](/Desktop/GHGP_img/GHGP-Scope-2.png){.absolute top=450 right=400 width="250" height="350"}
+
+![](/Desktop/GHGP_img/GHGP-Scope-3.png){.absolute top=450 right=0 width="250" height="350"}
+
+## Scope 1, 2, 3 {.scrollable}
+
+![Scope 1, 2, 3](/DiagramofScopeandEmissionsAcrosstheValue%20Chain_updated.png)
+
+![](/Desktop/GHGP_img/GHGP-Scope-1.png){.absolute top=100 left=0 width="250" height="350"}
+
+![](/Desktop/GHGP_img/GHGP-Scope-2.png){.absolute top=70 right=0 width="250" height="350"}
+
+![](/Desktop/GHGP_img/GHGP-Scope-3.png){.absolute top=425 right=0 width="250" height="350"}
+
+## GHGP Categories {.scrollable}
+
+:::: {.columns}
+::: {.column width="35%"}
+::: {.callout-note collapse="true" icon="false"}
+### Cross Sector
+* {{< fa book >}} Stationary Combustion  
+* {{< fa bus >}} Mobile Combustion  
+* {{< fa aircon >}} HFC, Air Conditioning and Refrigeration Use  
+* {{< fa glass >}} **Uncertainty Assessment**
+
+:::
+:::
+
+::: {.column width="35%"}
+::: {.callout-tip collapse="true" icon="false"}
+### Sector Specific
+- Aluminum and other Non-ferrous  
+- Iron and Steel
+- Nitric Acid
+- Ammonia
+- Adipic Acid
+- [Cement]{style="color:maroon"}
+- Lime
+- HFC-23 from HCFC-22
+- Semiconductor
+- Pulp and Paper
+:::
+:::
+
+:::{.column width="30%"}
+:::{.callout-important icon="false"}
+### Sectoral Guidance
+* Accounting and Reporting Standard  
+* Product Lifecycle Accounting and Reporting Standard
+* Project Accounting
+* Guidelines for Quantifying GHG Reductions from Grid-Connected Electricity Projects
+* Land Use, Land-Use Change, and Forestry Guidance for GHG Project Accounting
+* Measuring to Manage: A Guide to Designing GHG Accounting and Reporting Programs (2007)
+:::
+:::
+::::
+
+
+## IPCC Training Materials 
+
+:::: {.columns}
+::: {.column width="45%"}
+::: {.callout-note collapse="true" icon="false"}
+### Cross Issues
+* {{< fa book >}} Institutional Arrangement  
+* {{< fa bus >}} Approaches to Data Collections  
+* {{< fa aircon >}} **Uncertainty Analysis in Emissions Inventory**  
+* {{< fa magnifying-glass >}} Methodology Choice and Key Category Analysis
+* Time Series Consistency
+* Quality Assurance/ Quality Control and Verification
+* IPCC Emission Factor Database
+* IPCC Inventory Software
+* Conversion Tools
+ 
+
+:::
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip collapse="true" icon="false"}
+### Sector Specific
+- Energy  
+- IPPU
+- Agriculture, Forestry and Other Land Use 
+- Waste
+:::
+:::
+::::
+
+## Corporate Accounting and Reporting Standard Training Materials {.scrollable .smaller}
+:::: {.columns}
+::: {.column width="30%"}
+
+### Scope 1
+
+* Introduction - GHG Protocol
+* GHG Accounting and Reporting Principles
+* Organization Boundaries Setup
+* Operational Boundaries Setup
+* Tracking Emission overtime
+* Identifying Sources
+* Calculating Emissions
+* Reporting GHG Emissions
+:::
+
+::: {.column width="30%"}
+
+### Scope 2
+
+* Introduction
+* Business Goals
+* Accounting and Reporting Principles
+* Scope 2 Accounting Method
+* Identifying Scope 2 Emissions
+* Setting Scope 2 Boundaries
+* Calculating Emissions
+* Accounting and Reporting Requirement
+* Recommended Reporting on Instrument Features and Policy Context
+* Setting Reduction Targets and Tracking Emissions Over Time
+:::
+
+::: {.column width="40%"}
+### Scope 3
+
+* Introduction
+* Business Goals
+* Summary of Steps and Requirements
+* Accounting and Reporting Principles
+* Identifying Scope 3 Emissions
+* Setting Scope 3 Boundaries
+* Collecting Data
+* Allocating Emission
+* Setting a GHG reduction Target
+* Tracking Emission Overtime
+* Assurance
+* Reporting
+:::
+::::
+
+
+## GHG Principles
+:::: {.columns}
+:::{.column width="30%"}
+:::{.callout-note collapse="true" icon="false"}
+### IPCC - TACCC
+
+* Transparency
+* Accurancy 
+* Completeness
+* Consistency
+* Comparability
+
+:::
+:::
+
+:::{.column width="30%"}
+:::{.callout-tip collapse="true" icon="false"}
+### GHG Protocol - TRACC
+
+- Relevance
+- Transparency
+- Accurancy
+- Consistency
+- Completeness
+
+:::
+:::
+
+:::{.column width="30%"}
+:::{.callout-important collapse="true" icon="false"}
+### ISO-14064 - GRCCAT
+* General True&Fair
+* Relevance
+* Completeness
+* Consistency
+* Accuracy
+* Transparency
+:::
+:::
+::::
+
+# Calculation
+
+## Methodologies, Tools and Inventory Management
+
+:::{.callout-tip}
+## Emissions = Activity Data x Emission Factor x Other Parameters
+:::
+
+:::: {.columns}
+::: {.column width="45%"}
+::: {.callout-note icon="false"}
+
+### IPCC Tools
+1. Inventory Software (Database Management)
+    a. Stationary Combustion
+    b. Transportation
+    c. Cement
+    d. Solvents
+    e. HFC and refrigeration
+2. Emission Factor Database
+3. Conversion Tools
+
+:::
+:::
+
+::: {.column width="45%"}
+::: {.callout-note icon="false"}
+### GHGP Tools
+1. Sectorwise Guidance
+2. Calculation Sheets (individual)
+    a. Process
+    b. Stationary Combustion
+    c. Mobile Combustion
+    d. Fugitive emission (HFC)
+
+
+:::
+:::
+::::
+
+# Reporting
+## GHG Inventory Reporting
+:::: {.columns}
+::: {.column width="45%"}
+::: {.callout-note icon="false"}
+### IPCC inventory Software includes reporting capabilities by sector, by gas.
+:::
+:::
+
+::: {.column width="45%"}
+::: {.callout-note icon="false"}
+### GHGP has reporting template by sector, by gas. All calculation sheets has to be aggregated by sector, by gas.
+:::
+:::
+::::
+
+# Key Issues - Data, Data, Data.......
+
+## We have to setup {.scrollable}
+::::: {.columns}
+:::: {.column width="60%"}
+::: {.callout-note icon="false"}
+### Robust GHG Management System
+- Business GHG Inventory Team 
+    - Scope 1
+    - Scope 2
+    - Scope 3
+    - QA/QC
+  
+  <center>**Or**</center>
+
+- IPCC GHG Inventory Team
+  - Energy
+  - Industry Process and Product Use
+  - Agriculture, Forestry and Other Land Use
+  - Waste
+  - QA/QC
+:::
+::::
+
+:::: {.column width="35%"}
+::: {.callout-important icon="false"}
+
+## Hybrid team of IPCC + GHGP
+
+USEPA Templates are available to start with.
+
+**Do you want to certify ISO-14604 for GHG Inventory Management?**
+
+:::
+::::
+::::
+
+# Cost Estimates
+## Training Fees {.scrollable}
+:::: {.columns}
+::: {.column width="32%"}
+::: {.callout-note icon="false"}
+
+### Basic <br/> 5 Days <br/> 300 USD/head
+
+<center> Concepts and Principles </center>
+<center> Generic Methodologies </center>
+<center>Calculation - IPCC (Tier 1) or GHGP (Scope 1) </center>
+<center> Reporting - IPCC or GHGP </center>
+<center> Email/Phone/Video Call support </center>
+
+:::
+:::
+
+::: {.column width="32%"}
+::: {.callout-tip icon="false"}
+
+### Intermediate <br/> 10 days <br/> 500 USD/head
+
+<center>Concepts and Principles</center>
+<center>Generic Methodologies</center>
+<center>Calculation</center>
+<center>IPCC (Tier 2) Plus GHGP (Scope 1, 2)</center>
+<center>Reporting</center>
+<center>IPCC and GHGP</center>
+:::
+:::
+
+::: {.column width="32%"}
+::: {.callout-important icon="false"}
+
+### [Advanced <br/> 20 days <br/> 1000 USD/head]{style="text-align:center;"}
+
+<center> Concepts and Principles</center>
+<center> Generic Methodologies </center>
+<center> Calculation - IPCC (Tier 2) Plus GHGP (Scope 1, 2, 3)</center>
+<center> Reporting </center>
+<center>IPCC Plus GHGP</center>
+<center>ISO-14064 </center>
+
+:::
+:::
+::::
+
+
+## Certificates - UNFCCC
+![](/Downloads/GHGP/TTE%20Certificate_Kyaw_Aung_C1.png){.absolute top=70 left=0, width="550" height="400"}
+![](/Downloads/GHGP/TTE%20Certificate_Kyaw_Aung_C2_3.png){.absolute bottom=0 right=0 width="550" height="400"}
+
+## Certificates - IPCC and GHG Management Institute
+
+![](/Downloads/GHGP/501EX745_KAung_4.17.20.png){.absolute top=70 left=0, width="395" height="300"}
+![](/Downloads/GHGP/541EX313_KAung_4.28.20.png){.absolute top=70 right=0 width="395" height="300"}
+![](/Downloads/GHGP/Certificate%20of%20Training_UNFCCCIPCCEX448_Kyaw%20Moe%20Aung_5-10-21.png){.absolute bottom=0 right=0 width="395" height="300"}
+
+![](/Downloads/GHGP/UNFCCC511EX312_KAung_3-31-21.png){.absolute bottom=0 left=0 width="395" height="300"}
+
+![](/Downloads/GHGP/UNFCCC521EX321_Aung_3.31.21.png){.absolute bottom=200 left=300 width="395" height="300"}
+
+## GHG Inventory and Future Modelling {.scrollable}
+
+![](/Downloads/GHGP/Poster%20presentation_KMA_Myanmar.png)
+
+## Thank you for your kind attention and Welcome to the Discussion.{.smaller}
